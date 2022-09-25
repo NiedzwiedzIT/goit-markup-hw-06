@@ -404,6 +404,20 @@
           </li>
         </ul>
       </div>
+      <!-- Підпишіться на розсилку -->
+      <form>
+        <div class="social-network">                    
+          <span class="footer-pre-title">Підпишіться на розсилку</span>
+          <div class="footer-subscribe-btn">
+            <input type="email" name="email" id="email" placeholder="E-mail">
+            <button type="submit" class="btn-sumbit-modal">Підписатися
+              <svg class="icon-send">
+                <use href="./images/icons.svg.svg#icon-icon-send-1"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </form>
     </div>
   </footer>
   <!-- Modal -->
@@ -420,16 +434,25 @@
           <ul class="group-modal">
             <li class="item-group-modal">
               <label for="name">Ім'я</label>
-              <input type="text" name="name" id="name">
+              <input type="text" class="form-input" name="name" id="name" >
+              <svg class="icon-name">
+                <use href="./images/icons.svg.svg#icon-Vector-1"></use>
+              </svg>
 
             </li>
             <li class="item-group-modal">
               <label for="tel">Телефон</label>
               <input type="tel" name="tel" id="tel">
+              <svg class="icon-name">
+                <use href="./images/icons.svg.svg#icon-Vector-2"></use>
+              </svg>
             </li>
             <li class="item-group-modal">
-              <label for="email">Пошта</label>
+              <label for="mail">Пошта</label>
               <input type="email" name="mail" id="mail">
+              <svg class="icon-name">
+                <use href="./images/icons.svg.svg#icon-Vector-3"></use>
+              </svg>
             </li>
             <li class=" item-group-modal comment">
               <label for="comment">Коментар</label>
@@ -439,7 +462,8 @@
 
           <div class="radio-modal">
             <input type="radio" name="contract" value="contract" id="contract">
-            <label class="contract-modal" for="contract">Погоджуюся з розсилкою та приймаю Умови договору</label>
+            <label class="contract-modal" for="contract">Погоджуюся з розсилкою та приймаю </label>
+            <a class="link-contract" href="#">Умови договору</a>
           </div>
           <button class="btn-sumbit-modal" type="submit">Відправити</button>
         </form>
