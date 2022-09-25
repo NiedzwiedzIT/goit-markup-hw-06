@@ -409,7 +409,11 @@
   <!-- Modal -->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button class="is-hidden-modal" data-modal-close></button>
+      <button class="is-hidden-modal" data-modal-close>
+        <svg class="icon-close-modal">
+          <use href="./images/icons.svg.svg#icon-Vector-6"></use>
+        </svg>
+      </button>
       <section>
         <h3 class="title-modal">Залиште свої дані, ми вам передзвонимо</h3>
         <form class="modal-form">
@@ -417,7 +421,7 @@
             <li class="item-group-modal">
               <label for="name">Ім'я</label>
               <input type="text" name="name" id="name">
-               
+
             </li>
             <li class="item-group-modal">
               <label for="tel">Телефон</label>
@@ -437,8 +441,8 @@
             <input type="radio" name="contract" value="contract" id="contract">
             <label class="contract-modal" for="contract">Погоджуюся з розсилкою та приймаю Умови договору</label>
           </div>
+          <button class="btn-sumbit-modal" type="submit">Відправити</button>
         </form>
-        <button class="btn-sumbit-modal" type="submit">Відправити</button>
       </section>
     </div>
   </div>
