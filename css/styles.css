@@ -792,9 +792,7 @@ ul {
   margin-right: auto;
   margin-left: auto;
 }
-.group-modal {
-  list-style: none;
-}
+
 .item-group-modal {
   position: relative;
   display: flex;
@@ -803,17 +801,17 @@ ul {
 .item-group-modal:not(:last-child) {
   margin-bottom: 28px;
 }
-.item-group-modal input {
+.item-group-modal .form-input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
   cursor: pointer;
 }
-.item-group-modal input:hover,
-.item-group-modal input:focus {
+.item-group-modal:hover .form-input,
+.item-group-modal:focus .form-input {
   border-color: var(--akcent-color);
 }
-.item-group-modal label {
+.item-group-modal .label {
   font-size: 12px;
   line-height: 1.16;
   margin-bottom: 4px;
@@ -821,14 +819,22 @@ ul {
   color: var(--secondary-teks-color);
   letter-spacing: 0.01em;
 }
+.form-input{
+  transition: var(--duration) var(--timing-function);
+}
+
+.form-input:hover + .icon-name,
+.form-input:focus + .icon-name {
+  fill: var(--akcent-color);
+}
 
 .icon-name {
   position: absolute;
   top: 50%;
-  bottom: 50%;
   left: 19px;
-  width: 12px;
   height: 12px;
+  transform: translateY(25%);
+  transition: var(--duration) var(--timing-function);
 }
 
 .comment textarea {
@@ -845,6 +851,7 @@ ul {
   line-height: 1.16;
   letter-spacing: 0.01em;
   cursor: pointer;
+  transition: var(--duration) var(--timing-function);
 }
 .comment textarea:hover,
 .comment textarea:focus {
@@ -916,8 +923,6 @@ ul {
   top: 50%;
   right: 0px;
   fill: var(--primary-color);
-    
+
   transform: translate(-50%, -50%);
-   
-   
 }
