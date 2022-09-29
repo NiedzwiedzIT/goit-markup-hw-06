@@ -312,8 +312,6 @@ ul {
   transform: scale(1);
 }
 .icon-close-modal {
-  width: 11px;
-  height: 11px;
   transition: var(--duration) var(--timing-function);
 }
 
@@ -323,6 +321,7 @@ ul {
 }
 
 .hero-btm {
+  position: relative;
   padding: 10px 32px;
   border-radius: 4px;
   border-color: transparent;
@@ -713,6 +712,8 @@ ul {
   display: flex;
   align-items: baseline;
 }
+
+/* Підпишіться на розсилку */
 .social-network {
   margin-left: 70px;
 }
@@ -805,6 +806,7 @@ ul {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
+  padding-left: 42px;
   cursor: pointer;
 }
 .item-group-modal:hover .form-input,
@@ -819,7 +821,7 @@ ul {
   color: var(--secondary-teks-color);
   letter-spacing: 0.01em;
 }
-.form-input{
+.form-input {
   transition: var(--duration) var(--timing-function);
 }
 
@@ -843,6 +845,7 @@ ul {
   resize: none;
   padding: 16px 12px;
   border-radius: 4px;
+  margin-bottom: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 
   color: rgba(117, 117, 117, 0.5);
@@ -858,35 +861,74 @@ ul {
   border-color: var(--akcent-color);
 }
 
-.contract-modal {
-  margin-bottom: 30px;
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
-.radio-modal {
-  display: block;
-  text-align: center;
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
-
-  font-size: 14px;
-  line-height: 1.71;
 
   color: var(--secondary-teks-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+.icon-border {
+  opacity: 1;
+}
+.check {
+  opacity: 0;
+  transition: var(--duration) var(--timing-function);
+}
+.checkbox:checked + .icon-checkbox > .check {
+  opacity: 1;
+  fill: var(--akcent-color);
 }
 
-.radio-modal input {
-  margin-top: 20px;
+.checkbox:checked + .icon-checkbox > .icon-border {
+  opacity: 0;
 }
+.contract {
+  margin-left: 10px;
+}
+
+/* .contract-modal::before {
+  content: ' ';
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  align-items: center;
+  outline: 2px solid black;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+.checkbox:checked + .contract-modal::before {
+  background-color: green;
+  outline: none;
+}
+
+.icon-checkbox:checked {
+  background-color: #188ce8;
+} */
+
+/* .contract-modal {
+  margin-bottom: 30px;
+} */
 .link-contract {
   color: var(--akcent-color);
 }
+
 .btn-sumbit-modal {
-  position: relative;
   display: flex;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  padding: 0;
+  padding: 10px 28px;
   margin-right: auto;
   margin-left: auto;
 
@@ -908,7 +950,10 @@ ul {
   margin-top: 20px;
   gap: 12px;
 }
-
+.subscribe-btn {
+  position: relative;
+  width: 200px;
+}
 .footer-subscribe-btn input {
   width: 358px;
   padding: 15px;
@@ -918,11 +963,6 @@ ul {
   background-color: #2f303a;
 }
 .icon-send {
-  position: absolute;
-  width: 24px;
-  top: 50%;
-  right: 0px;
   fill: var(--primary-color);
-
-  transform: translate(-50%, -50%);
+  margin-left: 10px;
 }

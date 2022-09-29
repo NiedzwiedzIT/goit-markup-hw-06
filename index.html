@@ -411,7 +411,7 @@
           <div class="footer-subscribe-btn">
             <input type="email" name="email" id="email" placeholder="E-mail">
             <button type="submit" class="btn-sumbit-modal">Підписатися
-              <svg class="icon-send">
+              <svg class="icon-send" width="24" height="24">
                 <use href="./images/icons.svg.svg#icon-icon-send-1"></use>
               </svg>
             </button>
@@ -424,7 +424,7 @@
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="is-hidden-modal" data-modal-close>
-        <svg class="icon-close-modal">
+        <svg class="icon-close-modal" width="11" height="11">
           <use href="./images/icons.svg.svg#icon-Vector-6"></use>
         </svg>
       </button>
@@ -460,11 +460,16 @@
             </li>
           </ul>
 
-          <div class="radio-modal">
-            <input type="radio" name="contract" value="contract" id="contract">
-            <label class="contract-modal" for="contract">Погоджуюся з розсилкою та приймаю </label>
-            <a class="link-contract" href="#">Умови договору</a>
-          </div>
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox" name="contract" value="contract" id="contract">
+            <svg class="icon-checkbox" width="16" height="15" id="contract">
+              <use class="icon-border" href="./images/icons.svg.svg#icon-Vector-4"></use>
+              <use class="check" href="./images/icons.svg.svg#icon-icon-check"></use>
+            </svg>
+            <span class="contract"> Погоджуюся з розсилкою та приймаю <a class="link-contract" href="#">Умови
+                договору</a></span>
+
+          </label>
           <button class="btn-sumbit-modal" type="submit">Відправити</button>
         </form>
       </section>
