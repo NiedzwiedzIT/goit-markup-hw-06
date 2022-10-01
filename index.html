@@ -375,7 +375,7 @@
       </div>
 
       <div class=" social-network">
-        <span class="footer-pre-title">приєднуйтесь</span>
+        <b class="footer-pre-title">приєднуйтесь</b>
         <ul>
           <li class="footer-media">
             <a class="footer-item-media " href="#" rel="noopener noreferrer nofollow" target="_blank">
@@ -407,10 +407,13 @@
       <!-- Підпишіться на розсилку -->
       <form>
         <div class="social-network">
-          <span class="footer-pre-title">Підпишіться на розсилку</span>
+          <b class="footer-pre-title">Підпишіться на розсилку</b>
           <div class="footer-subscribe-btn">
-            <input type="email" name="email" id="email" placeholder="E-mail">
-            <button type="submit" class="btn-sumbit-modal">Підписатися
+            <div class="form-field"> 
+              <input class="input-email-footer" type="email" name="email" id="email" placeholder=" ">
+              <label for="name" class="label-email-footer">E-mail</label>
+            </div>
+            <button type="submit" class="hero-btm">Підписатися
               <svg class="icon-send" width="24" height="24">
                 <use href="./images/icons.svg.svg#icon-icon-send-1"></use>
               </svg>
@@ -428,51 +431,57 @@
           <use href="./images/icons.svg.svg#icon-Vector-6"></use>
         </svg>
       </button>
-      <section>
-        <h3 class="title-modal">Залиште свої дані, ми вам передзвонимо</h3>
-        <form class="modal-form">
-          <ul class="group-modal">
-            <li class="item-group-modal">
-              <label for="name" class="label">Ім'я</label>
+
+      <h3 class="title-modal">Залиште свої дані, ми вам передзвонимо</h3>
+      <form class="modal-form">
+        <ul class="group-modal">
+          <li class="item-group-modal">
+            <label for="name" class="label">Ім'я</label>
+            <div class="input-wrap">
               <input type="text" class="form-input" name="name" id="name">
               <svg class="icon-name" width="12">
                 <use href="./images/icons.svg.svg#icon-Vector-1"></use>
               </svg>
+            </div>
 
-            </li>
-            <li class="item-group-modal">
-              <label for="tel" class="label">Телефон</label>
+          </li>
+          <li class="item-group-modal">
+            <label for="tel" class="label">Телефон</label>
+            <div class="input-wrap">
               <input type="tel" class="form-input" name="tel" id="tel">
               <svg class="icon-name" width="12">
                 <use href="./images/icons.svg.svg#icon-Vector-2"></use>
               </svg>
-            </li>
-            <li class="item-group-modal">
-              <label for="mail" class="label">Пошта</label>
+            </div>
+          </li>
+          <li class="item-group-modal">
+            <label for="mail" class="label">Пошта</label>
+            <div class="input-wrap">
               <input type="email" class="form-input" name="mail" id="mail">
               <svg class="icon-name" width="12">
                 <use href="./images/icons.svg.svg#icon-Vector-3"></use>
               </svg>
-            </li>
-            <li class=" item-group-modal comment">
-              <label for="comment" class="label">Коментар</label>
-              <textarea name="comment" id="comment" rows="10" placeholder="Введіть текст"></textarea>
-            </li>
-          </ul>
+            </div>
+          </li>
+          <li class=" item-group-modal comment">
+            <label for="comment" class="label">Коментар</label>
+            <textarea name="comment" id="comment" rows="10" placeholder="Введіть текст"></textarea>
+          </li>
+        </ul>
 
-          <label class="checkbox-label">
-            <input type="checkbox" class="checkbox" name="contract" value="contract" id="contract">
-            <svg class="icon-checkbox" width="16" height="15">
-              <use class="icon-border" href="./images/icons.svg.svg#icon-Vector-4"></use>
-              <use class="check" href="./images/icons.svg.svg#icon-icon-check"></use>
-            </svg>
-            <span class="contract"> Погоджуюся з розсилкою та приймаю <a class="link-contract" href="#">Умови
-                договору</a></span>
+        <label class="checkbox-label">
+          <input type="checkbox" class="checkbox" name="contract" value="contract" id="contract">
+          <svg class="icon-checkbox" width="16" height="15">
+            <use class="icon-border" href="./images/icons.svg.svg#icon-Vector-4"></use>
+            <use class="check" href="./images/icons.svg.svg#icon-icon-check"></use>
+          </svg>
+          <b class="contract"> Погоджуюся з розсилкою та приймаю <a class="link-contract" href="#">Умови
+              договору</a></b>
 
-          </label>
-          <button class="btn-sumbit-modal" type="submit">Відправити</button>
-        </form>
-      </section>
+        </label>
+        <button class="btn-sumbit-modal" type="submit">Відправити</button>
+      </form>
+
     </div>
   </div>
   <script src="./js/modal.js"></script>
