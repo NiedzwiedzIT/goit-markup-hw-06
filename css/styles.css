@@ -311,8 +311,8 @@ ul {
   border-radius: 50%;
 
   background-color: var(--primary-color);
-  border: 1px solid var(--box-shadow-radio-btn-one)
-  cursor: pointer;
+  border: 1px solid var(--box-shadow-radio-btn-one);
+  cursor:pointer;
 
   transform: scale(1);
 }
